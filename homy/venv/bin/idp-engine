@@ -1,0 +1,6 @@
+#!/home/thijs-alens/Documents/masterproef/code/blockly/homy/venv/bin/python
+import sys
+from idp_engine.IDP_Z3 import cli
+
+if __name__ == '__main__':
+    sys.exit(cli())
