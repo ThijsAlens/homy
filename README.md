@@ -12,8 +12,8 @@ Homy is an application for home automation modeling using the IDP-Z3 reasoning e
 3. Install the required libraries by running ```pip install -r requirements.txt```.
 
 ### Install the blockly dependencies
-1. [Install](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) npm if you have not already.
-2. Go into the correct directory by running ```cd homy``` again.
+1. [Install](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) npm if you have not already. Make sure Node.js is version 22.14.0, other versions may work as well, but are not guaranteed.
+2. Go into the correct directory by running ```cd homy_src``` again.
 2. Run ```./install_blockly.bash``` to install the required dependencies.
 
 ### Run homy
