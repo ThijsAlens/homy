@@ -1,19 +1,12 @@
 #!/bin/bash
 
+echo "Installing npm dependencies..."
 npm install
 npm install concurrently --save-dev
 
-cd homy_src || { echo "Directory homy_src not found"; exit 1; }
+echo "Creating a Virtual Environment..."
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 
-git clone https://gitlab.com/krr/IDP-Z3
-mv IDP-Z3 IDP-Z3_github
-
-cd IDP-Z3_github || { echo "Directory IDP-Z3_github not found"; exit 1; }
-
-sudo apt update
-sudo apt install pipx
-pipx ensurepath
-export PATH="$HOME/.local/bin:$PATH"
-pipx install poetry
-
-poetry install --with consultant
+echo "All done! Change to homy_src to run homy."
