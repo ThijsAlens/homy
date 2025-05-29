@@ -10,4 +10,7 @@ mv IDP-Z3 IDP-Z3_github
 
 cd IDP-Z3_github || { echo "Directory IDP-Z3_github not found"; exit 1; }
 
+python3 -m pip install --user pipx
+pipx install poetry
+
 poetry install --with consultant
