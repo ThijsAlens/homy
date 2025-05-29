@@ -13,6 +13,7 @@ cd IDP-Z3_github || { echo "Directory IDP-Z3_github not found"; exit 1; }
 sudo apt update
 sudo apt install pipx
 pipx ensurepath
+export PATH="$HOME/.local/bin:$PATH"
 pipx install poetry
 
 poetry install --with consultant
